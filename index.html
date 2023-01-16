@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SignUp</title>
+    <link rel="shortcut icon" href="/Images/favicon.png" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+        integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="/CSS/style.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="container-form">
+            <div class="heading">
+                <h2>Sign Up</h2>
+            </div>
+            <div class="input-container">
+                <input type="text" class="userName" required="required">
+                <i class="fa-solid fa-user"></i>
+                <span>Username</span>
+            </div>
+            <div class="input-container">
+                <input type="text" class="name" required="required">
+                <i class="fa-solid fa-lock"></i>
+                <span>Name</span>
+            </div>
+            <div class="input-container">
+                <input type="email" class="Email" required="required">
+                <i class="fa-solid fa-envelope"></i>
+                <span>Enter e-Mail</span>
+            </div>
+            <div class="input-container">
+                <input type="password" class="createPassWord passWord" required="required">
+                <i class="fa-solid fa-lock"></i>
+                <i class="fa-sharp fa-solid fa-eye show" onclick="showPassword(1)"></i>
+                <i class="fa-sharp fa-solid fa-eye-slash show false hide" onclick="showPassword(1)"></i>
+                <span>Password</span>
+            </div>
+            <div class="input-container">
+                <input type="password" class="ConfPassWord passWord" required="required">
+                <i class="fa-solid fa-lock"></i>
+                <i class="fa-sharp fa-solid fa-eye show" onclick="showPassword(2)"></i>
+                <i class="fa-sharp fa-solid fa-eye-slash show false hide" onclick="showPassword(2)"></i>
+                <span>Confirm Password</span>
+            </div>
+            <div class="input-container">
+                <input type="submit" class="btn" required="required" class="submit">
+            </div>
+            <div class="signIn">
+                Already an User? <a href="#" class="logIn">LogIn</a>
+            </div>
+        </div>
+        <div class="signInForm SignIn hidden">
+            <div class="heading">
+                <h2>Log In</h2>
+            </div>
+            <div class="input-container">
+                <input type="text" class="userName" required="required">
+                <i class="fa-solid fa-user"></i>
+                <span>Username</span>
+            </div>
+            <div class="input-container">
+                <input type="password" class="createPassWord passWord" required="required">
+                <i class="fa-solid fa-lock"></i>
+                <i class="fa-sharp fa-solid fa-eye show" onclick="showPassword(3)"></i>
+                <i class="fa-sharp fa-solid fa-eye-slash show false hide" onclick="showPassword(3)"></i>
+                <span>Password</span>
+            </div>
+            <div class="Register">
+                Are you new Here? <a href="#" class="register">Register Now</a>
+            </div>
+        </div>
+    </div>
+
+
+
+
+    <script src="/JS/script.js"></script>
+</body>
+
+</html>
